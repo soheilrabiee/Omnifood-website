@@ -13,10 +13,10 @@
 ---Colors
     
     -Primary: #e67e22
-    -Tints: 
+    -Tints: #fdf2e9
     -Shades:
     -Accents:
-    -Greys: #555
+    -Greys: #555, #333
     
 ---Shadows
     
@@ -44,11 +44,33 @@ body {
     color: #555;
 }
 
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 9.6rem 0;
+}
+
 .hero {
     max-width: 130rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 2.4rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
 }
 
 .hero-img {
