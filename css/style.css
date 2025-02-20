@@ -6,9 +6,14 @@
 
 -Font weights:
     Default = 400
+    500
+    660
+    700
 
 -Line heights:
     Default: 1
+    1.05
+    1.6 -> paragraph
 
 ---Colors
     
@@ -21,7 +26,7 @@
 ---Shadows
     
 ---Border radius
-    
+    Default: 9px
 -SPACING SYSTEM (px)
     2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
     
@@ -115,6 +120,45 @@ body {
 
 .logo {
     height: 2.2rem;
+}
+
+/********************************************/
+/* NAVIGATION */
+/********************************************/
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    border-radius: 9px;
+    padding: 1.2rem 2.4rem;
+    color: #fff;
+    background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #cf711f;
 }
 
 /********************************************/
