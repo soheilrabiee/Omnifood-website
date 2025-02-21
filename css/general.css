@@ -19,7 +19,7 @@
 ---Colors
     
     -Primary: #e67e22
-    -Tints: #fdf2e9
+    -Tints: #fdf2e9 , #fae5d3
     -Shades: #cf711f
     -Accents:
     -Greys: #555, #333
@@ -100,7 +100,8 @@ body {
 
 .grid {
     display: grid;
-    gap: 9.6rem;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
 }
 
 .grid--2-cols {
@@ -113,6 +114,10 @@ body {
 
 .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
 }
 
 .heading-primary,
@@ -136,6 +141,9 @@ body {
 }
 
 .heading-tertiary {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
 }
 
 .subheading {
