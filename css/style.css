@@ -13,6 +13,7 @@
 -Line heights:
     Default: 1
     1.05
+    1.2
     1.6 -> paragraph
 
 ---Colors
@@ -114,13 +115,33 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.heading-primary,
+.heading-secondary {
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
 .heading-primary {
     font-size: 5.2rem;
-    font-weight: 700;
     line-height: 1.05;
-    color: #333;
-    letter-spacing: -0.5px;
     margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
 }
 
 .margin-right-sm {
