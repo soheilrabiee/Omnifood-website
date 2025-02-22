@@ -283,6 +283,11 @@
     width: 100%;
 }
 
+.all-recipes {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
 .list {
     list-style: none;
     display: flex;
