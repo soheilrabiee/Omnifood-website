@@ -105,6 +105,26 @@ body {
     border-bottom: 1px solid transparent;
 }
 
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #cf711f;
+}
+
 /********************************************/
 /* GENERAL REUSABLE COMPONENTS */
 /********************************************/
@@ -173,7 +193,9 @@ body {
     letter-spacing: 0.75px;
 }
 
+/********************************************/
 /* SETTINGS CLASSES */
+/********************************************/
 
 .margin-right-sm {
     margin-right: 1.6rem !important;
