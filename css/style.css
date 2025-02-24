@@ -319,13 +319,18 @@
 /********************************************/
 
 .section-testimonials {
-    padding: 9.6rem 0;
+    background-color: #fdf2e9;
+}
+
+.testimonials-container {
+    padding: 9.6rem;
 }
 
 .testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4.8rem;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
 }
 
 .testimonial-img {
@@ -343,4 +348,16 @@
 .testimonial-name {
     font-size: 1.6rem;
     color: #777;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem 1.6rem 1.6rem 0;
+}
+
+.gallery-img {
+    display: block;
+    width: 100%;
 }
