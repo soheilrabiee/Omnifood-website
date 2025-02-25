@@ -19,12 +19,14 @@
 ---Colors
     
     -Primary: #e67e22
-    -Tints: #fdf2e9 , #fae5d3
+    -Tints: #fdf2e9 , #fae5d3, #eb984e
     -Shades: #cf711f
     -Accents:
     -Greys: #555, #333, #6f6f6f
     
 ---Shadows
+
+    box-shadow: 0 2.4rem 6.8rem rgba(0, 0, 0, 0.075);
     
 ---Border radius
     Default: 9px
