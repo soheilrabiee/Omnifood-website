@@ -363,14 +363,37 @@
 }
 
 .pricing-plan {
-    background-color: #fdf2e9;
     border-radius: 11px;
-    padding: 4.8rem;
     width: 75%;
 }
 
 .pricing-plan--starter {
     justify-self: end;
+    /* box-shadow: inset 0 0 0 2px #fdf2e9; */
+    border: 2px solid #fdf2e9;
+    padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+    content: "Best value";
+    position: absolute;
+    top: 6%;
+    right: -18%;
+
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.8rem 8rem;
+    transform: rotate(45deg);
 }
 
 .plan-header {
