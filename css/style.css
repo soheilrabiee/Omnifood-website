@@ -479,11 +479,19 @@
     height: 50rem;
 
     background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    overflow: hidden;
 }
 
 .cta-text-box {
 }
 
 .cta-img-box {
-    background-image: url("../img/eating.jpg");
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(235, 151, 78, 0.35),
+            rgba(230, 125, 34, 0.35)
+        ),
+        url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center;
 }
