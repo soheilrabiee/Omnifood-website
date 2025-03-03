@@ -63,6 +63,8 @@
     border: none;
     background: none;
     cursor: pointer;
+
+    display: none;
 }
 
 .icon-mobile-nav {
