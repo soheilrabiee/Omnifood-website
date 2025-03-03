@@ -214,3 +214,40 @@ Instead, 1rem = 1em = 16px */
         margin-bottom: 3.2rem;
     }
 }
+
+/********************************************/
+/* BELOW 544PX */
+/********************************************/
+@media (max-width: 34em) {
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .logos img {
+        height: 1.2rem;
+    }
+}
