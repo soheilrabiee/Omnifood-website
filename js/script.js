@@ -12,7 +12,33 @@ btnNavEl.addEventListener("click", function () {
 });
 
 ///////////////////////////////////////////////////////////
+//Smooth scrolling animation
+
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const href = link.getAttribute("href");
+
+        if (href === "#")
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+
+        if (href !== "#" && href.startsWith("#")) {
+            const sectionEl = document.querySelector(href);
+            sectionEl.scrollIntoView({ behavior: "smooth" });
+        }
+
+        if (link.classList.contains("main-nav-link"))
+            headerEl.classList.toggle("nav-open");
+    });
+});
+
+///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
+
 function checkFlexGap() {
     var flex = document.createElement("div");
     flex.style.display = "flex";
@@ -30,8 +56,6 @@ function checkFlexGap() {
     if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
-
-// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*
 .no-flexbox-gap .main-nav-list li:not(:last-child) {
